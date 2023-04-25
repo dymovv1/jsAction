@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>JS.Actions</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="container">
+
+    <div id="text" contenteditable="false">
+
+        Створити HTML-сторінку для відображення/редагування тексту. 
+        При відкритті сторінки текст відображається за допомогою тега div. 
+        При натисканні Ctrl + E, замість div з'являється textarea з тим же текстом, який тепер можна редагувати. 
+        При натисканні Ctrl + S, замість textarea з'являється div з уже зміненим текстом. 
+        Не забудь вимкнути поведінку за замовчуванням для цих поєднань клавіш.
+
+      </div>
+
+      <div class="body-table">
+
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">Number</th>
+            <th onclick="sortTable(1)">Colors</th>
+            <th onclick="sortTable(2)">Fruits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10</td>
+            <td>Red</td>
+            <td>Apple</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Green</td>
+            <td>Pepper</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Yellow</td>
+            <td>Banana</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Blue</td>
+            <td>Blueberry</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div>
+        <p class="text-table">Створити HTML-сторінку з великою таблицею. При кліку на заголовок стовпця, необхідно відсортувати дані цього стовпця. 
+            Врахуй, що числові значення повинні сортуватися як числа, а не як рядки.</p>
+      </div>
+      
+        </div>
+
+    </div>
+
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
